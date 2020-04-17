@@ -22,6 +22,6 @@
 
 <div class='landing'>
 	<h1 style='text-align:center'>Site Under Construction</h1>
-	<img class='landing-gif' src='https://media.giphy.com/media/hp3dmEypS0FaoyzWLR/giphy.gif'/>
-	<p>🥺 Trust me! It's gonna 🔥</p>
+	<img class='landing-gif' src='https://media.giphy.com/media/hp3dmEypS0FaoyzWLR/giphy.gif'  alt="I'm working hard... trust me."/>
+	<p>🥺 Trust me! It's gonna be 🔥</p>
 </div>
