@@ -9,7 +9,7 @@
 		box-sizing: border-box;
 		display:flex;
 		align-items:center;
-		padding:0 32pt;
+		padding:8pt 32pt 0 32pt;
 		max-width:500pt;
 		margin:0 auto;
 		justify-content: space-between
@@ -31,15 +31,14 @@
 
 	nav .linkholder {
 		text-decoration: none;
-		max-width: 200pt;
-		width:100%;
 		text-align: right;
+        display:flex;
+        align-items:center;
 	}
 
 	nav .navlink {
 		text-transform: capitalize;
 		text-decoration: none;
-		padding-bottom:8pt;
 		padding: 0 6pt;
 	}
 
@@ -71,7 +70,9 @@
 
 	<div class='linkholder'>
 		<a class='navlink' aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a>
-		<a class='navlink disabled' aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a>
+		<a class='navlink disabled' aria-current='{segment === "about" ? "page" : undefined}' href='about'>Services</a>
+        <a class='navlink disabled' aria-current='{segment === "case" ? "page" : undefined}' href='cases'>cases</a>
 		<a class='navlink disabled' rel=prefetch aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a>
 	</div>
+
 </nav>
