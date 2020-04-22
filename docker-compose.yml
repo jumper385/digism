@@ -1,0 +1,18 @@
+version: '3'
+services:
+    web: 
+        build: ./web
+        expose: 
+            - 3000
+        volumes:
+            - ./web/src:/app/src
+        restart: unless-stopped
+
+    proxy:
+        build: ./nginx
+        ports:
+            - "80:80"
+            - "443:443"
+        depends_on:
+            - web
+        restart: unless-stopped
