@@ -9,10 +9,10 @@
 		box-sizing: border-box;
 		display:flex;
 		align-items:center;
-		padding:8pt 32pt 0 32pt;
-		max-width:500pt;
+		padding:16pt 0;
+		max-width:800pt;
 		margin:0 auto;
-		justify-content: space-between
+		justify-content: space-between;
 	}
 
 	nav .holder {
@@ -20,7 +20,7 @@
 		margin:0;
 		display:flex;
 		align-items: center;
-		margin-bottom: 8pt;
+		justify-content: center;
 	}
 
 	nav .sitetitle {
@@ -64,13 +64,12 @@
 <nav>
 
 	<div class='holder'>
-		<img src='https://media.giphy.com/media/LPkczVwUYcMbXsRCdP/giphy.gif' style='height:36pt' alt='cool emoji'/>
 		<p class='sitetitle'><span style='font-weight:800'>Digi</span><i>sm</i></p>
 	</div>
 
 	<div class='linkholder'>
 		<a class='navlink' aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a>
-		<a class='navlink disabled' aria-current='{segment === "about" ? "page" : undefined}' href='about'>Services</a>
+		<a class='navlink' aria-current='{segment === "about" ? "page" : undefined}' href='services'>Services</a>
         <a class='navlink disabled' aria-current='{segment === "case" ? "page" : undefined}' href='cases'>cases</a>
 		<a class='navlink disabled' rel=prefetch aria-current='{segment === "contact" ? "page" : undefined}' href='contact'>contact</a>
 	</div>
