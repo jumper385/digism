@@ -1,18 +1,95 @@
 <style>
-  .container {
-    font-family: "Nanum Gothic", sans-serif;
-    border-radius: 6pt;
-    background-size: cover;
+  .cta {
+    margin: 0 6pt;
+    font-size: 32pt;
+    color: white;
+    font-weight: normal;
+    text-shadow: -1pt 1pt 0 #e040fb, 1pt 0 0 #18ffff, 0 -1pt 0 #ffff00;
   }
-  .description {
-    width: 100%;
-    margin: 0 auto;
-    height: calc(100vh - 128pt);
+  .cta:hover {
+    color: #ffff00;
+    text-shadow: -1pt 1pt 0 #e056fd, 1pt 0 0 #c7ecee, 0 -1pt 0 #f0932b;
+  }
+  .cta:first-of-type {
+    margin: 0;
+  }
+  .cta:last-of-type {
+    margin: 0;
+  }
+
+  .page {
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 128pt;
+    position: relative;
+  }
+
+  .ctaholder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 24pt;
+  }
+
+  .summary {
+    background: #130f40;
+    color: white;
+    box-sizing: border-box;
+    padding: 0 32pt;
+    padding-top: 72pt;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 36pt;
+    max-width: 100vw;
+    padding-bottom:64pt;
+  }
+
+  .summaryHeading {
+    font-size: 32pt;
+    color: #badc58;
+    margin: 0;
+    margin-bottom: 16pt;
+    padding: 0;
+  }
+
+  .summarytext {
+    line-height: 150%;
+    margin-bottom: 32pt;
+  }
+
+  hr {
+    height: 2pt;
+    width: 100%;
+    border: none;
+    background: #badc58;
+    width: 32pt;
+    margin-left: 0;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .page {
+      box-sizing: border-box;
+      padding: 32pt;
+    }
+    .cta {
+      font-size: 32pt;
+      margin: 0;
+    }
+
+    .ctaholder {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .summary {
+      grid-template-columns: 1fr;
+    }
   }
 </style>
 
@@ -20,19 +97,51 @@
   <title>Digism</title>
 </svelte:head>
 
-<div class="container">
-  <div class="description">
-    <h2 style="font-family: 'Playfair Display', serif;">
-      <mark style="background:black; color:white">Full-Stack</mark>
-      Web Development
-    </h2>
-    <p style="line-height:1.75; margin:24pt 0; width:300pt">
-      We build full-stack websites - specializing in beautiful
-      <u>
-        <em>real-time</em>
-      </u>
-      web interfaces using Docker, NodeJS and MongoDB.
-    </p>
-    <a href="services" style='height:32pt; background:black; color:white; padding: 0 12pt; box-sizing:border-box; display:flex; align-items:center; border-radius:3pt;'>Learn more about our Services</a>
+<svelte:window />
+
+<div class="page">
+  <!-- <p style="font-size:14pt;">
+    <span style="font-weight: bold; color:#69F0AE">
+      <span>Digi</span><span style="color:#7bed9f">sm</span>
+    </span>
+    Presents Full-Stack:
+  </p> -->
+
+  <h1
+    style="margin:0; font-size:64pt; color:white; text-shadow: -2pt 2pt 0
+    #c7ecee, 2pt 0 0 #e056fd, 0 -2pt 0 #f0932b; text-align:left; width:100%;
+    color:#130f40">
+    Digism
+  </h1>
+
+  <div class="ctaholder">
+    <h1 class="cta">Design</h1>
+    <h1 class="cta">Automation</h1>
+    <h1 class="cta">Consultation</h1>
   </div>
+  <a
+    style="text-decoration:none; font-size:32pt; color:#130f40;
+    position:absolute; bottom:64pt"
+    class="material-icons"
+    href="#projects">
+    expand_more
+  </a>
+</div>
+
+<div id="projects" class="summary">
+
+  <div>
+    <p>UWA Engineers' Club</p>
+    <h1 class="summaryHeading">Primary Stakeholder/Sponsor Website</h1>
+    <hr />
+    <p>Full-Stack Development, Custom CMS, Docker</p>
+  </div>
+  <div>
+
+    <p class="summarytext"><span style='color:#dff9fb'>The Challenge</span> Univsersity of Western Australia Engineers' Club (UEC) is the Engineering Faculty Society. It serves as a representative for the student body and club sponsors. To this end, we required the new website to be SEO friendly, easily accessible and easy to use by commitee members, sponsors representatives and club members.</p>
+
+    <a href='http://digism.xyz:5000' style='text-decoration:none; color:white; border:1pt solid white;padding:6pt 32pt'>Visit Website</a>
+
+  </div>
+
 </div>
