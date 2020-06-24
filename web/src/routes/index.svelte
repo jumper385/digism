@@ -46,7 +46,7 @@
     grid-template-columns: 1fr 2fr;
     grid-column-gap: 36pt;
     max-width: 100vw;
-    padding-bottom:64pt;
+    padding-bottom: 64pt;
   }
 
   .summaryHeading {
@@ -55,11 +55,6 @@
     margin: 0;
     margin-bottom: 16pt;
     padding: 0;
-  }
-
-  .summarytext {
-    line-height: 150%;
-    margin-bottom: 32pt;
   }
 
   hr {
@@ -132,15 +127,23 @@
 
   <div>
     <p>UWA Engineers' Club</p>
-    <h1 class="summaryHeading">Primary Stakeholder/Sponsor Website</h1>
+    <h1 class="summaryHeading">Primary Website</h1>
     <hr />
-    <p>Full-Stack Development, Custom CMS, Docker</p>
+    <p>Full-Stack Development, Custom CMS, Dockerization</p>
   </div>
-  <div>
+  <div style='width:100%;'>
 
-    <p class="summarytext"><span style='color:#dff9fb'>The Challenge</span> Univsersity of Western Australia Engineers' Club (UEC) is the Engineering Faculty Society. It serves as a representative for the student body and club sponsors. To this end, we required the new website to be SEO friendly, easily accessible and easy to use by commitee members, sponsors representatives and club members.</p>
+    <img
+      alt="uec website"
+      style="width:100%; margin:12pt 0;"
+      src="/uec_screenshot.png" />
 
-    <a href='http://digism.xyz:5000' style='text-decoration:none; color:white; border:1pt solid white;padding:6pt 32pt'>Visit Website</a>
+    <a
+      href="http://digism.xyz:5000"
+      style="text-decoration:none; color:white; border:1pt solid
+      white;padding:6pt 32pt; width:100%;">
+      Visit Website
+    </a>
 
   </div>
 
