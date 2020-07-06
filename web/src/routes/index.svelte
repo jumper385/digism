@@ -139,7 +139,7 @@
       src="/uec_screenshot.png" />
 
     <a
-      href="http://digism.xyz:5000"
+      href="uec.org.au"
       style="text-decoration:none; color:white; border:1pt solid
       white;padding:6pt 32pt; width:100%;">
       Visit Website
